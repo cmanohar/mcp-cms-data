@@ -1,0 +1,47 @@
+{
+  "name": "mcp-cms-data",
+  "version": "0.1.0",
+  "description": "MCP server for CMS public data — physician utilization, drug spending, hospital quality, hospital costs, drug pricing (NADAC), Medicare enrollment. No API key required.",
+  "author": "Chinmay Patil",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mcp-cms-data": "dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "cms",
+    "medicare",
+    "physician",
+    "drug-spending",
+    "hospital",
+    "nadac",
+    "model-context-protocol",
+    "claude",
+    "llm"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
