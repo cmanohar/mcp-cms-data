@@ -195,4 +195,4 @@ npm start          # Run the compiled server
 
 ## License
 
-MIT — Chinmay Patil
+MIT — Chinmay Manohar
